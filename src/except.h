@@ -13,7 +13,7 @@ typedef struct Except_Frame Except_Frame;
 struct Except_Frame
 {
     Except_Frame *prev;
-    jmpbuf env;
+    jmp_buf env;
     const char *file;
     int line;
     const T *exception;
@@ -28,7 +28,7 @@ enum
 };
 
 extern Except_Frame *Except_stack;
-extern Except_T Assert_Failed; // 在assert.h中会使用
+extern const Except_T Assert_Failed; // 在assert.h中会使用
 
 void Except_raise(const T *e, const char *file, int line);
 
