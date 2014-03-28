@@ -1,4 +1,4 @@
-#ifndef EXCEPT_INCLUDED
+ï»¿#ifndef EXCEPT_INCLUDED
 #define EXCEPT_INCLUDED
 
 #include <setjmp.h>
@@ -21,14 +21,14 @@ struct Except_Frame
 
 enum
 {
-    Except_entered = 0, //Ò²ÊÇÊ×´Îµ÷ÓÃsetjmpµÄ·µ»ØÖµ
+    Except_entered = 0, //ä¹Ÿæ˜¯é¦–æ¬¡è°ƒç”¨setjmpçš„è¿”å›žå€¼
     Except_raised,
     Except_handled,
     Except_finalized
 };
 
 extern Except_Frame *Except_stack;
-extern const Except_T Assert_Failed; // ÔÚassert.hÖÐ»áÊ¹ÓÃ
+extern const Except_T Assert_Failed; // åœ¨assert.hä¸­ä¼šä½¿ç”¨
 
 void Except_raise(const T *e, const char *file, int line);
 

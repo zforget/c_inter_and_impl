@@ -1,4 +1,4 @@
-#ifndef MEM_INCLUDED
+﻿#ifndef MEM_INCLUDED
 #define MEM_INCLUDED
 #include "except.h"
 
