@@ -1,0 +1,2 @@
+add_executable(test_assert test_assert.c)
+target_link_libraries(test_assert zclib)

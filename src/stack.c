@@ -39,7 +39,7 @@ void Stack_push(T stk, void *x)
     NEW(t);
     t->x = x;
     t->link = stk->head;
-    std->head = t;
+    stk->head = t;
     stk->count++;
 }
 
